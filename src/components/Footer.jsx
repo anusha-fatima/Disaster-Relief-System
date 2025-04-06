@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 Disaster Management System. Designed by Dard e Disco. Powered by React.</p>
+        <p>&copy; 2025 Disaster Management System. Powered by React.</p>
         <div className="social-icons">
          
           <a href="https://www.linkedin.com/in/anusha-fatima-69743a288/"><i className="fab fa-linkedin-in"></i></a>
