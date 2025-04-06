@@ -8,7 +8,10 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'react-router-dom',
-        'react-intersection-observer' 
+        'react-intersection-observer' ,
+         'sweetalert2',
+         'sweetalert2-react-content',
+        '@supabase/supabase-js'
       ] ,
       
     }
