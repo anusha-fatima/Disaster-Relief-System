@@ -24,8 +24,15 @@ const Footer = () => {
         <div className="footer-section links">
           <h3>Team Memebers</h3>
           <ul>
-            <li><a href="/styleguide">Anusha Fatima</a></li>
-            <li><a href="/licenses">Tamia Naeem</a></li>
+          <li><a
+               href="https://www.linkedin.com/in/anusha-fatima-69743a288/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Anusha Fatima
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/tamia-naeem"  target="_blank"
+              rel="noopener noreferrer">Tamia Naeem</a></li>
       
           </ul>
         </div>
@@ -34,8 +41,22 @@ const Footer = () => {
         <p>&copy; 2025 Disaster Management System. Powered by React.</p>
         <div className="social-icons">
          
-          <a href="https://www.linkedin.com/in/anusha-fatima-69743a288/"><i className="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/anusha-fatima" ><i class="fa-brands fa-github"></i></a>
+        <a
+              href="https://www.linkedin.com/in/anusha-fatima-69743a288/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "#333" }}
+            >
+               <i class="fa-brands fa-linkedin"></i>
+            </a>
+          <a
+              href="https://github.com/anusha-fatima"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "#333" }}
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
         </div>
       </div>
      

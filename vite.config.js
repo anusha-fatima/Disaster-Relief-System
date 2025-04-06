@@ -6,14 +6,19 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [
-        'react-router-dom',
-        'react-intersection-observer' ,
-         'sweetalert2',
-         'sweetalert2-react-content',
-        '@supabase/supabase-js'
-      ] ,
-      
+      external: []
     }
-  }
+  },
+  optimizeDeps: {
+    include: [
+      'react-intersection-observer',
+      'sweetalert2',
+      'sweetalert2-react-content',
+      '@supabase/supabase-js',
+      'react-router-dom',
+      'react',
+      'react-dom'
+    ]
+  },
+  base: '/', 
 })

@@ -1,7 +1,11 @@
+/**
+ * @typedef {import('sweetalert2')} Swal
+ * @typedef {import('sweetalert2-react-content')} withReactContent
+ */
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 import "./Header.css";
 import "../Style/Chatbot.css"; 
 import AccidentImage from "../assets/Images/Accident.png";
