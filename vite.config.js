@@ -5,10 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [
-        'react-intersection-observer',
-        '@supabase/supabase-js'
-      ]
+      external: []
     }
   },
   optimizeDeps: {
@@ -16,6 +13,8 @@ export default defineConfig({
       'react-router-dom',
       'react',
       'react-dom',
+      'react-intersection-observer',
+      '@supabase/supabase-js',
       'sweetalert2',
       'sweetalert2-react-content'
     ]
