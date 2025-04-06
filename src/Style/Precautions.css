@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.precautions {
+  opacity: 0;
+  transform: translateY(20px);
+  padding: 10px;
+  text-align: center;
+  min-height: 80vh;
+  background-image: url("../assets/Images/BgPrecaution.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+.precautions.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.precautions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  color: #FFF;
+  padding: 0 15px;
+}
+
+.precaution-card1, 
+.precaution-card2, 
+.precaution-card3, 
+.precaution-card4 {
+  width: 100%;
+  max-width: 300px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.precaution-card1 img, 
+.precaution-card2 img, 
+.precaution-card3 img, 
+.precaution-card4 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-body1, 
+.card-body2, 
+.card-body3, 
+.card-body4 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(31, 61, 71, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  transition: right 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.precaution-card1:hover .card-body1,
+.precaution-card2:hover .card-body2,
+.precaution-card3:hover .card-body3,
+.precaution-card4:hover .card-body4 {
+  right: 0;
+}
+
+.title1, 
+.title2, 
+.title3, 
+.title4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subPara1, 
+.subPara2, 
+.subPara3, 
+.subPara4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.cardBtn1, 
+.cardBtn2, 
+.cardBtn3, 
+.cardBtn4 {
+  width: 120px;
+  padding: 12px 20px;
+  background-color: #7E695C;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardBtn1:hover, 
+.cardBtn2:hover, 
+.cardBtn3:hover, 
+.cardBtn4:hover {
+  background-color: #E6D6C1;
+  color: #1A303F;
+}
+
+
+@media (max-width: 1200px) {
+  .precaution-card1, 
+  .precaution-card2, 
+  .precaution-card3, 
+  .precaution-card4 {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .precaution-card1, 
+  .precaution-card2, 
+  .precaution-card3, 
+  .precaution-card4 {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .title1, 
+  .title2, 
+  .title3, 
+  .title4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .subPara1, 
+  .subPara2, 
+  .subPara3, 
+  .subPara4 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .precautions {
+    padding: 10px;
+  }
+
+  .precaution-card1, 
+  .precaution-card2, 
+  .precaution-card3, 
+  .precaution-card4 {
+    height: 350px;
+  }
+
+  .title1, 
+  .title2, 
+  .title3, 
+  .title4 {
+    font-size: 1.2rem;
+  }
+
+  .cardBtn1, 
+  .cardBtn2, 
+  .cardBtn3, 
+  .cardBtn4 {
+    width: 100px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+

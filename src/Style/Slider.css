@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+.slider-section {
+    width: 100%;
+    height: 150px; /* Fixed height for the slider section */
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #408a51, #11421d);
+    border-top: 1px solid #177245;
+    border-bottom: 1px solid #177245;
+}
+
+.slider-container {
+    --bkg: #5eb3fd;
+    --white: #e7e6e6;
+    --ambulance-red: #e63946;
+    --ambulance-white: #f1faee;
+    --ambulance-blue: #1d3557;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    
+}
+
+.title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #ffd700;
+}
+
+.title p {
+    color: #ffd900c0;
+    margin-top: 0;
+    font-weight: 500;
+}
+.title p button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+.ambulance {
+    margin-top: 15px;
+    width: 250px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    background-color: var(--ambulance-red);
+    border-radius: 10px;
+    position: relative;
+    animation: ambulanceMove 6s ease-in-out infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes ambulanceMove {
+    0% {
+        transform: translateX(100vw) rotateY(0deg);
+    }
+    49% {
+        transform: translateX(-100px) rotateY(0deg);
+    }
+    50% {
+        transform: translateX(-100px) rotateY(180deg);
+    }
+    99% {
+        transform: translateX(100vw) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(100vw) rotateY(0deg);
+    }
+}
+
+/* Ambulance details */
+.ambulance:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px 5px 0 0;
+}
+
+.ambulance:after {
+    content: "AMBULANCE";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: var(--ambulance-white);
+    font-weight: bold;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Wheels */
+.wheel {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    bottom: -20px;
+    border: 5px solid #666;
+}
+
+.wheel:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wheel.front {
+    left: 30px;
+}
+
+.wheel.back {
+    right: 30px;
+}
+
+/* Light bar */
+.light-bar {
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-color: var(--ambulance-blue);
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.light {
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background-color: #ffd700;
+    top: -15px;
+    animation: lightFlash 0.5s alternate infinite;
+}
+
+.light.left {
+    left: 20px;
+}
+
+.light.right {
+    right: 20px;
+}
+
+@keyframes lightFlash {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}

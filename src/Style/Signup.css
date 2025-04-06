@@ -1,0 +1,15 @@
+.signup-page{
+    padding: 40px;
+    background: rgba(62, 196, 80, 0.863);
+  
+  }
+
+  form{
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    margin: 4rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }

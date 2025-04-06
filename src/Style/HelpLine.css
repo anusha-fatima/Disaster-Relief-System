@@ -1,0 +1,269 @@
+.helpline-container {
+  padding: 20px;
+  background: linear-gradient(90deg, #203629, #186e43);
+}
+
+.helpline-search-container {
+  background-color: #34b45267;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.helpline-search-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #64eb83;
+  text-align: center; 
+}
+.helpline-search ::placeholder{
+  color: #02250a;
+  font-size: 1.5rem;
+}
+
+.search-paragrapgh {
+  color: #b5fac5;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: center; 
+}
+
+.helpline-search {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #b5fac5;
+}
+
+.search-bar {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid #02300d;
+  color: #d4ebd9;
+  border-radius: 10px;
+  width: 100%; 
+  max-width: 400px; 
+  outline: none;
+  font-size: 1rem; 
+  transition: 0.2s ease;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #02300d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #98f1ad;
+}
+
+.helpline-results {
+  font-size: 1rem;
+  color: #64eb83;
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.helpline-results h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #78dd90de;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.helpline-service {
+  color: #02250a;
+  padding: 10px;
+}
+
+.helpline-search-number {
+  color: #02250a;
+  padding: 5px;
+}
+
+.helpline-box {
+  margin-top: 40px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.helpline-content {
+  flex: 1;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.helpline-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6df58cc0;
+}
+
+.helpline-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #b5fac5;
+}
+
+.helpline-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+}
+
+.video-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.video-btn {
+  background-color: #28a74667;
+  color: white;
+}
+
+.video-btn:hover {
+  background-color: #053f1367;
+}
+
+.helpline-image-container {
+  flex: 1;
+  max-width: 100%; 
+  margin-top: 20px; 
+}
+
+.helpline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; 
+}
+
+.helpline-table-container {
+  background-color: #34b45267;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 100%; 
+  max-width: 800px; 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.helpline-table-title {
+  background-color: #71db8a67;
+  color: #02250a;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.helpline-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.helpline-row {
+  border-bottom: 1px solid #02250a;
+}
+
+.helpline-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  color: #02250a;
+}
+
+.helpline-number {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 10px;
+  color: #faf2e4;
+}
+
+.helpPara {
+  flex: 1;
+  max-width: 100%; 
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .helpline-search-title {
+    font-size: 1.5rem; 
+  }
+
+  .helpline-results h3 {
+    font-size: 1.5rem; 
+  }
+
+  .helpline-title {
+    font-size: 1.5rem; 
+  }
+
+  .helpline-table-title {
+    font-size: 1.2rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .helpline-search-title {
+    font-size: 1.2rem; 
+  }
+
+  .helpline-results h3 {
+    font-size: 1.2rem; 
+  }
+
+  .helpline-title {
+    font-size: 1.2rem; 
+  }
+
+  .helpline-table-title {
+    font-size: 1rem;
+  }
+}

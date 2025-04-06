@@ -1,0 +1,153 @@
+.emergency-container {
+    text-align: center;
+    padding: 12px;
+    background-color: #28a74667;
+  }
+  .emergency-container h2{  
+    padding-top: 5.5rem;
+    font-size: 3rem;
+  margin-bottom: 10px;
+  color: #051E22;
+  font-weight: 800px;
+    
+  }
+  .supplies-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .supplies-table th,
+  .supplies-table td {
+    border: 1px solid #28a745;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .supplies-table th {
+    background-color: #71c785;
+    font-weight: bold;
+    color: #051E22;
+  }
+  
+  .supplies-table tr:nth-child(even) {
+    background-color: #77cc8b;
+  }
+  
+  .supplies-table tr:hover {
+    background-color: #a8e7b7;
+  }
+  
+  .supplies-table button {
+    padding: 5px 10px;
+    background-color: #5abd71;
+    color: #094217;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .supplies-table button:hover {
+    background-color: #98daa6;
+  }
+  
+  .selected-items-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    background-color: #78c98b;
+  }
+  
+  .selected-items-box h3 {
+    margin-top: 0;
+    color: #022e11;
+  }
+  
+  .selected-items-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .selected-items-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #28a745;
+  }
+  
+  .selected-items-box li:last-child {
+    border-bottom: none;
+  }
+  
+  .selected-items-box button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #051E22;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .selected-items-box button:hover {
+    background-color: #5dca76;
+  }
+  .emergency-container h1{  
+  
+    font-size: 3rem;
+
+  color: #051E22;
+  font-weight: 800px;
+    
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+   background:#64b978;
+   width:50%;
+   width: 400px;
+   margin-top: 0;
+  }
+  
+  form input {
+    border: 2px solid #28a745;
+    border-radius: 4px;
+    margin: 5px;
+    outline: none;
+    color: #051E22;
+    font-size: 1rem;
+    background:#a8e7b7;
+   
+  }
+
+ .imageform{
+    padding: 10px;
+    color: #094217;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+
+  .orderPara{
+    margin: 0;
+    font-size: 1rem;
+    color: #022e11;
+    display: flex;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 500;
+  }
