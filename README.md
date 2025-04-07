@@ -31,7 +31,7 @@ A React-based emergency management system connecting users with critical medical
 ## 🚀 Deployment
 
 Deployed on Vercel:  
-![Vercel](https://disaster-relief-system.vercel.app/)
+[Vercel](https://disaster-relief-system.vercel.app/)
 
 ## 🖥️ Local Development
 
