@@ -14,7 +14,10 @@ import Emergency from "./components/Emergency";
 
 function App() {
   return (
-    <div>
+    <div  className="app-container" style={{
+      width: '100%',
+      minHeight: '100vh',
+    }}>
       <BrowserRouter>
         <Navbar />
         

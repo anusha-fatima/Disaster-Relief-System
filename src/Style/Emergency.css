@@ -1,153 +1,222 @@
 .emergency-container {
-    text-align: center;
-    padding: 12px;
-    background-color: #28a74667;
-  }
-  .emergency-container h2{  
-    padding-top: 5.5rem;
-    font-size: 3rem;
-  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #28a74667;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.emergency-container h1,
+.emergency-container h2 {
+  font-size: 1.8rem; 
+  margin-bottom: 15px;
   color: #051E22;
-  font-weight: 800px;
-    
+  font-weight: 800;
+  padding-top: 3rem; 
+}
+
+.supplies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  overflow-x: auto; 
+  display: block;
+}
+
+.supplies-table th,
+.supplies-table td {
+  border: 1px solid #28a745;
+  padding: 5px;
+  text-align: left;
+  min-width: 50px; 
+}
+
+.supplies-table th {
+  background-color: #71c785;
+  font-weight: bold;
+  color: #051E22;
+  font-size: 0.9rem;
+}
+
+.supplies-table tr:nth-child(even) {
+  background-color: #77cc8b;
+}
+
+.supplies-table tr:hover {
+  background-color: #a8e7b7;
+}
+
+.supplies-table button {
+  padding: 2px 5px; 
+  font-size: 0.8rem;
+  background-color: #5abd71;
+  color: #094217;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap; 
+}
+
+
+.selected-items-box {
+  margin: 15px auto;
+  padding: 10px;
+  width: 95%;
+  max-width: 600px; 
+  border: 1px solid #28a745;
+  border-radius: 4px;
+  background-color: #78c98b;
+}
+
+.selected-items-box ul {
+  max-height: 200px;
+  overflow-y: auto; 
+}
+
+.selected-items-box button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #051E22;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected-items-box button:hover {
+  background-color: #5dca76;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background: #64b978;
+  width: 95%; 
+  max-width: 400px; 
+  margin: 0 auto 20px; 
+  box-sizing: border-box;
+}
+
+form input {
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+form button{
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #051E22;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.imageform {
+  padding: 8px;
+}
+
+.orderPara {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.disclaimer-card {
+  background-color: #fff3cdbe; 
+  border-left: 5px solid #ffc107; 
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+.disclaimer-icon {
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-top: 3px;
+}
+
+.disclaimer-content h3 {
+  margin: 0 0 8px 0;
+  color: #856404;
+  font-size: 1.2rem;
+}
+
+.disclaimer-content p {
+  margin: 0;
+  color: #856404;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+  .emergency-container h1,
+  .emergency-container h2 {
+    font-size: 2.2rem;
+    padding-top: 4rem;
   }
+
   .supplies-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    display: table; 
+    width: 80%;
+    margin: 0 auto 20px;
   }
-  
+
   .supplies-table th,
   .supplies-table td {
-    border: 1px solid #28a745;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .supplies-table th {
-    background-color: #71c785;
-    font-weight: bold;
-    color: #051E22;
-  }
-  
-  .supplies-table tr:nth-child(even) {
-    background-color: #77cc8b;
-  }
-  
-  .supplies-table tr:hover {
-    background-color: #a8e7b7;
-  }
-  
-  .supplies-table button {
-    padding: 5px 10px;
-    background-color: #5abd71;
-    color: #094217;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .supplies-table button:hover {
-    background-color: #98daa6;
-  }
-  
-  .selected-items-box {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #28a745;
-    border-radius: 4px;
-    background-color: #78c98b;
-  }
-  
-  .selected-items-box h3 {
-    margin-top: 0;
-    color: #022e11;
-  }
-  
-  .selected-items-box ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .selected-items-box li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-bottom: 1px solid #28a745;
-  }
-  
-  .selected-items-box li:last-child {
-    border-bottom: none;
-  }
-  
-  .selected-items-box button {
-    padding: 5px 10px;
-    background-color: #28a745;
-    color: #051E22;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .selected-items-box button:hover {
-    background-color: #5dca76;
-  }
-  .emergency-container h1{  
-  
-    font-size: 3rem;
-
-  color: #051E22;
-  font-weight: 800px;
-    
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-   background:#64b978;
-   width:50%;
-   width: 400px;
-   margin-top: 0;
-  }
-  
-  form input {
-    border: 2px solid #28a745;
-    border-radius: 4px;
-    margin: 5px;
-    outline: none;
-    color: #051E22;
+    padding: 10px;
     font-size: 1rem;
-    background:#a8e7b7;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .disclaimer-card {
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 5px;
    
   }
+  
+  .disclaimer-icon {
+    align-self: center;
+  }
+}
 
- .imageform{
-    padding: 10px;
-    color: #094217;
-  }
-  
-  form button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #218838;
+
+@media (min-width: 1024px) {
+  .emergency-container h1,
+  .emergency-container h2 {
+    font-size: 2.5rem;
+    padding-top: 5rem;
   }
 
-  .orderPara{
-    margin: 0;
-    font-size: 1rem;
-    color: #022e11;
-    display: flex;
-    padding: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: 500;
+  .supplies-table {
+    width: 90%;
+    max-width: 1000px;
   }
+
+  .supplies-table th,
+  .supplies-table td {
+    padding: 12px;
+  }
+
+  .selected-items-box {
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .emergency-container {
+    padding: 20px;
+  }
+  
+  .emergency-container h1,
+  .emergency-container h2 {
+    font-size: 3rem;
+  }
+}

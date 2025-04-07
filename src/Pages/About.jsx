@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/About.css";
-
+import { FaExclamationTriangle } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -109,6 +109,20 @@ const About = () => {
       </section>
 
       </div>
+
+      <div className="disclaimer-card">
+  <div className="disclaimer-icon">
+    <FaExclamationTriangle />
+  </div>
+  <div className="disclaimer-content">
+    <h3>Important Notice</h3>
+    <p>
+      This is a demonstration system only. Orders placed here are not real and 
+      will not be fulfilled. Please do not wait for any deliveries as this is 
+      purely a prototype for educational purposes.
+    </p>
+  </div>
+</div>
     </div>
   );
 };

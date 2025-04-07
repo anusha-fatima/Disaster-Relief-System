@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import supabase from "../supabase.js";
 import "../Style/Emergency.css";
+import { FaExclamationTriangle } from "react-icons/fa";
 
 function Emergency() {
   const [medicalKits, setMedicalKits] = useState([]);
@@ -137,7 +138,7 @@ function Emergency() {
       <table className="supplies-table">
         <thead>
           <tr>
-            <th>Serial No</th>
+            <th>No.</th>
             <th>Item</th>
             <th>Description</th>
             <th>Action</th>
@@ -164,7 +165,7 @@ function Emergency() {
             <table className="supplies-table">
               <thead>
                 <tr>
-                  <th>Serial No</th>
+                  <th>No.</th>
                   <th>Item</th>
                   <th>Description</th>
                   <th>Quantity</th>
@@ -196,7 +197,7 @@ function Emergency() {
             {selectedItems.map((item) => (
               <li key={item.id}>
                 {item.Item || item.item_name} - {item.Description || item.description}
-                <button onClick={() => handleRemoveItem(item.id)}>
+                <button className="supplies-table" onClick={() => handleRemoveItem(item.id)}>
                   Remove
                 </button>
               </li>
@@ -263,6 +264,19 @@ function Emergency() {
         />
         <button  smooth="true" type="submit">Place Order</button>
       </form>
+      <div className="disclaimer-card">
+  <div className="disclaimer-icon">
+    <FaExclamationTriangle />
+  </div>
+  <div className="disclaimer-content">
+    <h3>Important Notice</h3>
+    <p>
+      This is a demonstration system only. Orders placed here are not real and 
+      will not be fulfilled. Please do not wait for any deliveries as this is 
+      purely a prototype for educational purposes.
+    </p>
+  </div>
+</div>
     </div>
   );
 }

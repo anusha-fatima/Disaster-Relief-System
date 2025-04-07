@@ -57,17 +57,17 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-login" onClick={() => { setMenu("help_line"); closeMobileMenu(); }}>
-          <Link  smooth="true" style={{ textDecoration: "none", color: "#fff" }} to="/help_line">
+          <Link  smooth={true} style={{ textDecoration: "none", color: "#fff" }} to="/help_line">
             Help-Line
           </Link>
         </li>
         <li className="nav-login" onClick={() => { setMenu("services"); closeMobileMenu(); }}>
-          <Link  smooth="true" style={{ textDecoration: "none", color: "#FFF" }} to="/services">
+          <Link smooth={true} style={{ textDecoration: "none", color: "#FFF" }} to="/services">
             Services
           </Link>
         </li>
         <li className="nav-login" onClick={() => { setMenu("about"); closeMobileMenu(); }}>
-          <Link  smooth="true" style={{ textDecoration: "none", color: "#fff" }} to="/about">
+          <Link  smooth={true} style={{ textDecoration: "none", color: "#fff" }} to="/about">
             About
           </Link>
         </li>

@@ -1,5 +1,51 @@
 #root {
+  width: 100vw;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto; 
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  background: #051E22;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #051E22;
+  z-index: -1; 
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.supplies-table,
+.selected-items-box ul {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.05); /* For Firefox */
+}
+
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 4px; /* Thinner on mobile */
+    height: 4px;
+  }
 }
